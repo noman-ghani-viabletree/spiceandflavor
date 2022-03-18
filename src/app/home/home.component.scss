@@ -1,8 +1,6 @@
 @import "../../styles.scss";
 
 .section-1 {
-  
-
   &__left {
     display: flex;
     flex-direction: column;
@@ -91,15 +89,14 @@
     position: relative;
     div {
       height: 30px;
-    left: -40px;
-    top: 40px;
-    z-index: 1;
-    position: absolute;
+      left: -40px;
+      top: 40px;
+      z-index: 1;
+      position: absolute;
     }
-    .left-img{
+    .left-img {
       margin-bottom: -70px;
     }
-
   }
 
   &__middle {
@@ -158,7 +155,6 @@
   margin: 15rem 0;
 
   &__top {
-
     gap: 2rem;
 
     .feature {
@@ -167,6 +163,7 @@
       color: $color-secondary;
       padding: 1.6rem;
       border-radius: 10rem;
+      font-weight: 600;
     }
 
     .title {
@@ -200,19 +197,22 @@
       padding: 40px;
       transition: 0.3s ease all;
       transform: scale(1);
-      background: #FFF;
-      &:hover{
+      background: #fff;
+
+      &:hover {
         transition: 0.3s ease all;
         box-shadow: 0px 50px 80px -30px rgba(151, 109, 0, 0.2);
         transform: scale(1.02);
         z-index: 1;
-        .btn{
+
+        .btn {
           color: #fff;
           transition: 0.3s ease all;
           background: #ff6338;
           border-radius: 100px;
         }
       }
+
       .text-container {
         margin-top: 5rem;
         display: flex;
@@ -251,56 +251,53 @@
         gap: 1rem;
         padding: 1rem 2.4rem;
         transition: 0.3s ease all;
-        
       }
-
     }
   }
 }
 
 .dash_line {
   opacity: 0.2;
-  border:2px  dashed #ff6338;
+  border: 2px dashed #ff6338;
   border-style: none none dashed;
   color: #fff;
   background-color: #fff;
   margin-bottom: 4rem;
 }
 
-.about-us{
+.about-us {
   margin: 10rem 0;
   &__left {
-    background: url('../../assets/about-bg.png') no-repeat;
+    background: url("../../assets/about-bg.png") no-repeat;
     padding: 40px 6%;
-    color: #FFF;
-    .tag{
+    color: #fff;
+    .tag {
       background: $color-one;
       padding: 8px 20px;
       border-radius: 20px;
       font-size: 12px;
-      color: $color-two
+      color: $color-two;
     }
-    .title{
+    .title {
       font-family: $font-Playfair;
       font-size: 70px;
       font-weight: 900;
     }
-    .subtitle{
+    .subtitle {
       font-size: 15px;
     }
-    .count{
+    .count {
       font-size: 24px;
       font-weight: 600;
     }
-    .text{
+    .text {
       font-size: 16px;
     }
-
   }
   &__right {
     background: $color-two;
-    color: #FFF;
-    .day-text{
+    color: #fff;
+    .day-text {
       font-size: 20px;
       font-weight: 700;
     }

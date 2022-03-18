@@ -1,4 +1,5 @@
 @import "../../styles.scss";
+@import "../home/home.component.scss";
 
 $color-white: #fff;
 $color-three: #302f3c;
@@ -134,10 +135,21 @@ $bg-color-one: #fafafa;
     }
   }
 }
+
+.invite-section-border {
+  margin-top: 8rem;
+  margin-bottom: -1rem;
+
+  img {
+    width: 100%;
+  }
+}
+
 .invite-section-wrap {
   background-color: $color-two;
   position: relative;
   margin: 8rem 0;
+  margin-top: 0;
   padding-bottom: 4.2rem;
   overflow: hidden;
 
@@ -270,4 +282,25 @@ $bg-color-one: #fafafa;
     color: #9f9f9f;
     margin-top: 1.6rem;
   }
+}
+
+.subscribe {
+  background: #fff8ed;
+  border-radius: 50px;
+  margin: 0 50px;
+
+  height: 20vh;
+}
+
+.input-field-container {
+  background: #ffffff;
+  box-shadow: 0px 8px 20px -30px rgba(151, 109, 0, 0.08);
+  border-radius: 100px;
+}
+
+.input {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 16px;
 }
