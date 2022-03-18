@@ -1,79 +1,157 @@
 @import "../../styles.scss";
 
 .section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &__left {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-  
-    &__left {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 2rem;
-  
-      .subtitle {
-        font-family: $font-Poppins;
-        background-color: $color-one;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+
+    .subtitle {
+      font-family: $font-Poppins;
+      background-color: $color-one;
+      color: $color-secondary;
+      padding: 1.6rem;
+      border-radius: 10rem;
+    }
+
+    .title {
+      font-family: $font-Playfair;
+      font-weight: 900;
+      font-size: 7.5rem;
+      line-height: 8.5rem;
+      color: $color-primary;
+      width: 437px;
+      position: relative;
+
+      span {
         color: $color-secondary;
-        padding: 1.6rem;
-        border-radius: 10rem;
       }
-  
-      .title {
-        font-family: $font-Playfair;
-        font-weight: 900;
-        font-size: 7.5rem;
-        line-height: 8.5rem;
-        color: $color-primary;
-        width: 437px;
-        position: relative;
-  
-        span {
-          color: $color-secondary;
-        }
-  
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: -2rem;
-          width: 7.6rem;
-          height: 7.6rem;
-          background: #fff5f2;
-          border-radius: 50%;
-          opacity: 0.6;
-          z-index: -1;
-        }
-      }
-  
-      .btn_container {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-  
-        & > * {
-          cursor: pointer;
-        }
-      }
-  
-      .btn-1 {
-        background-color: $color-secondary;
-        color: #fff;
-      }
-  
-      .btn-2 {
-        display: flex;
-        gap: 1rem;
-        font-family: $font-Playfair;
-        font-weight: 600;
-  
-        .text {
-          margin-top: -2px;
-        }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -2rem;
+        width: 7.6rem;
+        height: 7.6rem;
+        background: #fff5f2;
+        border-radius: 50%;
+        opacity: 0.6;
+        z-index: -1;
       }
     }
-  
-    &__right {
+
+    .btn_container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      & > * {
+        cursor: pointer;
+      }
+    }
+
+    .btn-1 {
+      background-color: $color-secondary;
+      color: #fff;
+    }
+
+    .btn-2 {
+      display: flex;
+      gap: 1rem;
+      font-family: $font-Playfair;
+      font-weight: 600;
+
+      .text {
+        margin-top: -2px;
+      }
     }
   }
-  
+
+  &__right {
+  }
+}
+
+.catering {
+  &__top-border {
+    margin-bottom: -10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+    background: $color-two;
+    border-radius: 0px 0px 38px 38px;
+
+    font-family: $font-Playfair;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+}
+
+.section-3 {
+  margin: 15rem 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffe8c8;
+  gap: 8rem;
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .feature {
+      font-family: $font-Poppins;
+      background-color: $color-one;
+      color: $color-secondary;
+      padding: 1.6rem;
+      border-radius: 10rem;
+    }
+
+    .title {
+      font-family: $font-Playfair;
+      font-weight: 900;
+      font-size: 6rem;
+
+      color: $color-primary;
+
+      span {
+        color: $color-secondary;
+      }
+    }
+
+    .subtitle {
+      font-family: $font-Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: #302f3c;
+    }
+  }
+}
+
+.catering-card {
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 175%;
+    letter-spacing: 0.02em;
+    color: #EA6A12;
+}
