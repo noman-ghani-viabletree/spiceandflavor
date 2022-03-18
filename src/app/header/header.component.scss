@@ -4,9 +4,6 @@
   background-color: $color-primary;
   min-height: 9rem;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0 4rem;
   border-bottom-left-radius: 3.3rem;
   border-bottom-right-radius: 3.3rem;
@@ -49,8 +46,13 @@
     display: flex;
     flex-grow: 1;
     justify-content: center;
-    font-weight: 600;
-    gap: 5rem;
+    gap: 3.5rem;
+    .menu-text{
+      color: #FFF;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 14px;
+    }
 
     & > * {
       cursor: pointer;
@@ -59,16 +61,11 @@
 
   &__actions {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
 
     & > * {
       cursor: pointer;
-    }
-
-    div {
-      display: flex;
-      gap: 1rem;
     }
 
     .btn-1 {
