@@ -1,1 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+// color variables
+$color-primary: #23212a;
+$color-secondary: #e85430;
+
+$color-one: #fff0dc;
+$color-two: #ff6338;
+$color-three: #2b2b2b;
+$color-four: #575757;
+
+$font-Asap: "Asap", sans-serif;
+$font-Playfair: "Playfair Display", serif;
+$font-Poppins: "Poppins", sans-serif;
+$font-Montserrat: "Montserrat", sans-serif;
+
+// media query
+@mixin mediaQuery($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } // 600px
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 50em) {
+      @content;
+    } // 800px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    } // 1000px
+  }
+  @if $breakpoint == laptop {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } // 1200px
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //10px
+  
+  @include mediaQuery(tab-land){
+    font-size: 50%; //8px
+  }
+}
+
+body {
+  font-family: $font-Asap;
+  font-size: 1.6rem;
+  min-height: 100vh;
+}
+
+.btn-round {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 1.5rem 5rem;
+  border-radius: 2rem 4rem 2rem 4rem;
+}
+
+object {
+  pointer-events: none;
+}
+
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.text-center {
+  text-align: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.full-section {
+  width: 100%;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+}
