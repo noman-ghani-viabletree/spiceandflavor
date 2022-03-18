@@ -269,10 +269,35 @@
 
 .about-us{
   margin: 10rem 0;
+  &:before{
+    content: "";
+    width: 100%;
+    background: #FF6338;
+    border-radius: 0px 0px 38px 38px;
+    transform: rotate(-178.5deg);
+    position: absolute;
+    top: -11px;
+    left: 0;
+    opacity: 0.2;
+    bottom: -10px;
+  }
+  &:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #FF6338;
+    border-radius: 0px 0px 38px 38px;
+    transform: rotate(179.5deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
   &__left {
     background: url('../../assets/about-bg.png') no-repeat;
     padding: 40px 6%;
     color: #FFF;
+    
     .tag{
       background: $color-one;
       padding: 8px 20px;
@@ -282,11 +307,12 @@
     }
     .title{
       font-family: $font-Playfair;
-      font-size: 70px;
+      font-size: 62px;
       font-weight: 900;
     }
     .subtitle{
-      font-size: 15px;
+      font-size: 16px;
+      max-width: 430px;
     }
     .count{
       font-size: 24px;
@@ -298,11 +324,28 @@
 
   }
   &__right {
+    z-index: 1;
     background: $color-two;
+    border-top-right-radius: 40px;
     color: #FFF;
-    .day-text{
+    .day-title{
       font-size: 20px;
       font-weight: 700;
     }
+    .time{
+      font-size: 30px;
+      font-family: $font-Playfair;
+      font-weight: 900;
+    }
+  }
+}
+
+.slider-sec{
+  .title{
+    font-size: 52px;
+  }
+  .subtitle{
+    font-size: 16px;
+    color: #999999
   }
 }

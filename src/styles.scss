@@ -80,3 +80,53 @@ object {
   width: 100%;
   margin: auto;
 }
+.z-index-1{
+  z-index: 1;
+}
+.btn{
+  cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 2rem 4rem 2rem 4rem;
+        background-color: #fff;
+    color: #ff6338;
+}
+
+.new-btn-cocker{
+  color: #FFF;
+  font-family: $font-Playfair;
+  width: max-content;
+  text-decoration: none;
+  margin-left: 20px;
+  .icon-wrap{
+    position: relative;
+    background: #FFF;
+    height: 34px;
+    width: 34px;
+    border-radius: 34px;
+    &:before{
+          content: "";
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(to right, #FFF 50%, transparent 50%);
+    border-radius: 45px;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: -1;
+    }
+    .cocker-icon{
+      width: 20px;
+      margin-right: -2px;
+      margin-top: -1px;
+    }
+  }
+}
+
+.bg-off-white{
+  background: $color-one;
+}
+.theme-color{
+  color: $color-two;
+}
